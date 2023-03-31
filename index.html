@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Калькулятор</title>
+    <link rel="stylesheet" href="choices/choices.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <script defer src="choices/choices.min.js"></script>
+    <script defer src="js/index.js"></script>
+  </head>
+  <body>
+    <div class="wrapper">
+      <section style="padding-top: 150px; padding-bottom: 100px" class="calculator">
+        <div class="calculator__container">
+          <h2 class="calculator__title">Рассчитать перевозку онлайн</h2>
+          <div class="calculator__body">
+            <div class="calculator__top top-calculator">
+              <div class="top-calculator__left">
+                <div class="top-calculator__title">откуда</div>
+                <label class="top-calculator__label">
+                  <div class="top-calculator__name">страна отправления</div>
+                  <div class="top-calculator__select-wrapper">
+                    <select name="" id="" class="top-calculator__select select-d">
+                      <option value="Китай"></option>
+                      <option value="Россия"></option>
+                    </select>
+                    <div class="top-calculator__select-img">
+                      <img src="img/plan.svg" alt="" />
+                    </div>
+                  </div>
+                </label>
+                <div class="top-calculator__bottom">
+                  <label class="top-calculator__label">
+                    <div class="top-calculator__name">пункт отправления</div>
+                    <div class="top-calculator__container">
+                      <label class="top-calculator__select-wrapper not-padding not-padding_1">
+                        <select name="" id="" class="top-calculator__select select-d">
+                          <option value="Город"></option>
+                          <option value="Деревня"></option>
+                        </select>
+                      </label>
+                      <label class="top-calculator__select-wrapper not-padding not-padding_2">
+                        <select name="" id="" class="top-calculator__select select-d">
+                          <option value="Пекин"></option>
+                          <option value="Москва"></option>
+                        </select>
+                      </label>
+                    </div>
+                  </label>
+                </div>
+              </div>
+              <div class="top-calculator__right">
+                <div class="top-calculator__title">куда</div>
+                <label class="top-calculator__label">
+                  <div class="top-calculator__name">страна назначения</div>
+                  <div class="top-calculator__select-wrapper">
+                    <select name="" id="" class="top-calculator__select select-d">
+                      <option value="Россия"></option>
+                      <option value="Китай"></option>
+                    </select>
+                    <div class="top-calculator__select-img">
+                      <img src="img/plan-.svg" alt="" />
+                    </div>
+                  </div>
+                </label>
+                <div class="top-calculator__bottom">
+                  <label class="top-calculator__label">
+                    <div class="top-calculator__name">пункт назначения</div>
+                    <div class="top-calculator__container">
+                      <label class="top-calculator__select-wrapper not-padding not-padding_1">
+                        <select name="" id="" class="top-calculator__select select-d">
+                          <option value="Город"></option>
+                          <option value="Деревня"></option>
+                        </select>
+                      </label>
+                      <label class="top-calculator__select-wrapper not-padding not-padding_2">
+                        <select name="" id="" class="top-calculator__select select-d">
+                          <option value="Пекин"></option>
+                          <option value="Москва"></option>
+                        </select>
+                      </label>
+                    </div>
+                  </label>
+                </div>
+              </div>
+              <div class="top-calculator__swap">
+                <img src="img/swap.png" alt="swap" />
+              </div>
+            </div>
+
+            <div class="calculator__cargo cargo">
+              <div class="cargo__title top-calculator__title">ГРУЗ</div>
+              <div class="cargo__body">
+                <div class="cargo__triggers">
+                  <div class="cargo__trigger active">Коробки / Паллеты</div>
+                  <div class="cargo__trigger">Контейнеры</div>
+                  <div class="cargo__trigger">Машины</div>
+                </div>
+                <div class="cargo__items">
+                  <div class="cargo__item cargo__item_box active">
+                    <label class="top-calculator__label cargo__type">
+                      <div class="top-calculator__name">тип</div>
+                      <div class="top-calculator__select-wrapper not-padding">
+                        <select name="" id="" class="top-calculator__select select-d">
+                          <option value="Коробки/ящики"></option>
+                          <option value="Коробки/ящики"></option>
+                        </select>
+                      </div>
+                    </label>
+                    <label class="cargo__number">
+                      <div class="top-calculator__name">количество, шт</div>
+                      <input class="input__number" value="1" type="number" name="" id="" min="1" />
+                      <div class="cargo__arrow-top">
+                        <img class="a-t" src="img/arrow.svg" alt="" />
+                      </div>
+                      <div class="cargo__arrow-bottom">
+                        <img class="a-b" src="img/arrow.svg" alt="" />
+                      </div>
+                    </label>
+                    <label class="cargo__height">
+                      <div class="top-calculator__name">габариты</div>
+                      <div class="cargo__inputs">
+                        <input
+                          class="cargo__input cargo__input_one"
+                          type="text"
+                          placeholder="175"
+                        />
+                        <input
+                          class="cargo__input cargo__input_not"
+                          placeholder="высота"
+                          type="text"
+                        />
+                        <input
+                          class="cargo__input cargo__input_not"
+                          placeholder="ширина"
+                          type="text"
+                        />
+                        <div class="top-calculator__select-wrapper not-padding">
+                          <select name="" id="" class="top-calculator__select select-d">
+                            <option value="см"></option>
+                            <option value="см"></option>
+                          </select>
+                        </div>
+                      </div>
+                    </label>
+                    <label class="cargo__wight">
+                      <div class="top-calculator__name">вес</div>
+                      <div class="cargo__inputs">
+                        <input
+                          class="cargo__input cargo__input_one"
+                          type="text"
+                          placeholder="175"
+                        />
+                        <div class="top-calculator__select-wrapper not-padding">
+                          <select name="" id="" class="top-calculator__select select-d">
+                            <option value="кг"></option>
+                            <option value="кг"></option>
+                          </select>
+                        </div>
+                      </div>
+                    </label>
+                    <div class="cargo__button cargo__button_box button-plus">
+                      <span></span>
+                      <span></span>
+                    </div>
+                    <div class="cargo__box box-cargo">
+                      <div class="box-cargo__icon">
+                        <img src="img/box-arrow.svg" alt="" />
+                      </div>
+                      <div class="box-cargo__boxicon">
+                        <img src="img/box.svg" alt="" />
+                      </div>
+                      <div class="box-cargo__item">
+                        <div class="box-cargo__name">Позиций:</div>
+                        <div class="box-cargo__value">1</div>
+                      </div>
+                      <div class="box-cargo__item">
+                        <div class="box-cargo__name">Общий вес:</div>
+                        <div class="box-cargo__value">2 кг</div>
+                      </div>
+                      <div class="box-cargo__item">
+                        <div class="box-cargo__name">Общий объем:</div>
+                        <div class="box-cargo__value">0 m2</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="cargo__item cargo__item_cont">
+                    <div class="cargo__wrapper">
+                      <div
+                        class="cargo__item_cont_left"
+                        style="display: flex; @media (max-width: 500px) {display: block}"
+                      >
+                        <label class="cargo__number cargo__number_big">
+                          <div class="top-calculator__name">количество, шт</div>
+                          <input
+                            class="input__number"
+                            value="1"
+                            type="number"
+                            name=""
+                            id=""
+                            min="1"
+                          />
+                          <div class="cargo__arrow-top">
+                            <img class="a-t" src="img/arrow.svg" alt="" />
+                          </div>
+                          <div class="cargo__arrow-bottom">
+                            <img class="a-b" src="img/arrow.svg" alt="" />
+                          </div>
+                        </label>
+                        <div class="cargo__item_cont__choice">
+                          <div class="top-calculator__name">тип контейнера</div>
+                          <div class="choice">
+                            <div class="choice__item active">20”</div>
+                            <div class="choice__item">40”</div>
+                            <div class="choice__item">40”HC</div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="cargo__item_cont__right">
+                        <div class="cargo__item_cont__weight">
+                          <div class="top-calculator__name">вес</div>
+                          <div class="cargo__inputs">
+                            <input
+                              class="cargo__input cargo__input_one"
+                              type="text"
+                              placeholder="175"
+                            />
+                            <div class="top-calculator__select-wrapper not-padding">
+                              <select name="" id="" class="top-calculator__select select-d">
+                                <option value="кг"></option>
+                                <option value="кг"></option>
+                              </select>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="cargo__button button-plus">
+                          <span></span>
+                          <span></span>
+                        </div>
+                        <div class="cargo__delete">
+                          <img src="img/delete.svg" alt="" />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="cargo__item cargo__item_car">
+                    <label class="top-calculator__label cargo__type">
+                      <div class="top-calculator__name">Тип транспортного средства</div>
+                      <div class="top-calculator__select-wrapper not-padding">
+                        <select name="" id="" class="top-calculator__select select-d">
+                          <option value="Машина"></option>
+                          <option value="Машина"></option>
+                        </select>
+                      </div>
+                    </label>
+                    <div class="cargo__item_car__right">
+                      <label class="top-calculator__label cargo__type">
+                        <div class="top-calculator__name">Тип кузова</div>
+                        <div class="top-calculator__select-wrapper not-padding">
+                          <select name="" id="" class="top-calculator__select select-d">
+                            <option value="Тентованный фургон"></option>
+                            <option value="Тентованный фургон"></option>
+                          </select>
+                        </div>
+                      </label>
+                      <div class="cargo__button button-plus">
+                        <span></span>
+                        <span></span>
+                      </div>
+                      <div class="cargo__delete">
+                        <img src="img/delete.svg" alt="" />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="calculator__check">
+              <span class="switch">
+                <input id="online" type="checkbox" />
+                <label for="online">Таможенное оформление</label>
+              </span>
+            </div>
+            <div class="calculator__check">
+              <span class="switch-2">
+                <input id="online-2" type="checkbox" />
+                <label for="online-2">Страхование</label>
+              </span>
+            </div>
+
+            <div class="calculator__btns">
+              <button class="calculator__btn calculator__btn_border">СБРОСИТЬ</button>
+              <button class="calculator__btn">показать рассчет</button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>
